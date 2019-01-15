@@ -11,12 +11,12 @@ div.innerHTMl = `
 `;
 //mount 挂载
 app.appendChild(div);
-div.querySelector("button")[0].onclick = function() {
+div.querySelector("button")[0].onclick = () => {
   state += 1;
   //update 更新
   div.querySelector("p").innerText = state;
 };
-div.querySelector("button")[1].onclick = function() {
+div.querySelector("button")[1].onclick = () => {
   div.querySelector("button")[0].onclick = null;
   div.querySelector("button")[1].onclick = null;
   div.remove();
